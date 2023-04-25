@@ -1,4 +1,4 @@
-list = [1, 2, 3, 4, 5]
+list1 = [1, 2, 3, 4, 5]
 list2 = [1, 'a', 2.54, True]
 
 # print(list)
@@ -14,7 +14,7 @@ list2 = [1, 'a', 2.54, True]
 # Lists are mutable
 
 # new_list = list
-new_list = list[:]
+new_list = list1[:]
 new_list[2] = 13
 
 # print(list)
@@ -57,8 +57,17 @@ reversed_list = list_methods[::-1]
 # print(reversed_list)
 # print(list_methods)
 # print(sorted_list)
-# print(range(1,100))
+list_from_range = list(range(1, 100))
+# print(list_from_range)
 # list_from_range = list(range(1,100))
 
 joined_text = '|'.join(['This', 'is', 'Python', 'course'])
-print(joined_text)
+# print(joined_text)
+
+a, b, c, *other, d = [1, 2, 3, 4, 5, 6, 7]
+
+print(a)
+print(b)
+print(c)
+print(other)
+print(d)
